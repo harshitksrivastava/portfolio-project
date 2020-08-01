@@ -42,9 +42,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link" href="https://linkedin.com/in/harshit-srivastava-0311">LinkedIn</a>
-      <a class="nav-item nav-link"  href="{%static 'Harshit_resume.pdf'%}">Resume</a>
-      <a class="nav-item nav-link" href="{%url 'allblogs'%}">Blog</a>
+      <a class="nav-item nav-link"  >HOME</a>
+      <a class="nav-item nav-link" href="https://linkedin.com/in/harshit-srivastava-0311">LINKEDIN</a>
+      <a class="nav-item nav-link"  href="{%static 'Harshit_resume.pdf'%}">RESUME</a>
+      <a class="nav-item nav-link"  href="">EDUCATION</a>
+      <a class="nav-item nav-link"  href="">SKILLSET</a>
+      <a class="nav-item nav-link"  href="">CONTACT</a>
+
+
 
     </div>
   </div>
@@ -68,7 +73,7 @@
     <div class="container">
 
       <div class="row">
-        {% for job in jobs.all %}
+        {% for project in projects.all %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="{{job.image.url}}" length="20px"></img>
