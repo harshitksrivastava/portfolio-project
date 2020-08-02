@@ -1,9 +1,9 @@
 <!doctype html>
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load static %}
 {% block content%}
 <div>
-  <h1 class="jumbotron-heading text-center">PROJECTS</h1>
+  <h1 class="jumbotron-heading text-center">Projects</h1>
   <div class="album py-5 ">
     <div class="container" >
 
@@ -19,8 +19,16 @@
                     <br>
                   </div>
                   <p class="text-light">{{project.project_summary}}</p>
+                      <div class="text-light">
+                        <p>
+                          <b class="lead text-light">Technology Stack:</b>
+                          <br/>{% for tech in project.project_tech.all %}{{ tech }}<br/>{% endfor %}
+                        </p>
+
+                      </div>
                 </div>
           </div>
+          <br>
           <br>
       {% endfor %}
     </div>
@@ -28,8 +36,61 @@
   <br>
 </div>
 <div class="container text-center">
-  <a href="" class="btn btn-primary my-2">MORE ON GITHUB</a>
+  <a href="https://github.com/harshitksrivastava" class="btn btn-primary my-2">MORE ON GITHUB</a>
 </div>
+<br>
+<hr class="h-divider">
+<br>
+  <h1 class="jumbotron-heading text-center">Certication & Trainings</h1>
+    <br>
+    <div class="container border  p-5 border-white">
+      <section class="about section">
+                          <div class="section-inner">
 
+                              <div class="content">
+                                <div class="item">
+                                  <h3 class="title">SUMMER TRAINING, THE RESEARCH DESIGNS AND STANDARDS ORGANISATION (RDSO)</h3>
+                                  <h4 class="university">
+                                    <span class="year"> (2018)</span></h4>
+                                    <div class="col-sm-8 col-md-8 col-xs-8 ">
+                                      <p class="text-light">
+                                        Developed an Online Meal Ordering android application using PNR.
+                                      </p>
+                                          <div class="text-light">
+                                            <p>
+                                              <div class="content">
+                                                  <p>
+                                                      <b>Technology Stack:</b> Android(Java), Firebase <br>
 
+                                                  </p>
+                                              </div>
+                                            </p>
+
+                                          </div>
+                                    </div>
+                              </div>
+                              <!--//content-->
+                          </div>
+                          <!--//section-inner-->
+                      </section>
+    </div>
+    <br>
+    <br>
+    <div class="container border  p-5 border-white">
+      <section class="about section">
+                          <div class="section-inner">
+
+                              <div class="content">
+                                <div class="item">
+                                  <h3 class="title">Python for Beginners by Navin Reddy on Udemy</h3>
+                                  <h4 class="university">
+                                    <span class="year"> (2020)</span></h4>
+
+                              </div>
+                              <!--//content-->
+                          </div>
+                          <!--//section-inner-->
+                      </section>
+    </div>
+    <br>
 {% endblock %}

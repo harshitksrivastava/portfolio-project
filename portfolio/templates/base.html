@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-{% load staticfiles %}
+{% load static %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -87,7 +87,7 @@
                 <div class="navbar-nav ml-auto">
                   <a class="nav-item nav-link" href="{%url 'projects' %}" >PROJECTS</a>
                   <a class="nav-item nav-link" href="https://linkedin.com/in/harshit-srivastava-0311">LINKEDIN</a>
-                  <a class="nav-item nav-link"  href="{%static 'Harshit_resume.pdf'%}">RESUME</a>
+                  <a class="nav-item nav-link"  href="{%static 'Harshit_Srivastava.pdf'%}">RESUME</a>
                   <a class="nav-item nav-link"  href="{%url 'educations'  %}">EDUCATION</a>
                 </div>
             </div>
@@ -104,9 +104,12 @@
               <div class="col-sm-6 col-md-6 col-xs-6  text-left">
                 <p>
                       <h1 class="jumbotron-heading">Hi, I'm Harshit Srivastava</h1>
-                      <p class="lead">I am a python enthusiast.</p>
-                      <p>
-                        <a href="mailto:harsh0311@gmail.com" class="btn btn-primary my-2">Email Me</a>
+                      <div class="text-left">
+                        <p class="lead">I am a Python Django enthusiast from lucknow, India and currently living in Noida. I enjoy building
+                        things. If you are an employer looking to hire, we can get in touch.</p>
+                        <p>
+                      </div>
+                          <a href="mailto:harsh0311@gmail.com" class="btn btn-primary my-2">Get In Touch</a>
                       </p>
                 </p>
               </div>
