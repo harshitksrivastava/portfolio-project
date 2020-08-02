@@ -1,179 +1,32 @@
-<!doctype html>
-<html lang="en">
-{% load staticfiles %}
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Harshit Srivastava</title>
+<!DOCTYPE html>
+{% extends 'base.html' %}
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Bootstrap core CSS -->
-<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% block content %}
+    <h1 class="text-center">About Me</h1>
+    <br>
+    <div class="container border  p-5 border-white">
+      <section class="about section">
+                          <div class="section-inner">
 
+                              <div class="content">
+                                  <p>
+                                      <b>Languages:</b> Python, Java, Android, C <br>
+                                      <b>Frameworks:</b> Django, Django REST framework.<br>
+                                      <b>Tools:</b>MySQL Workbench, Git.<br>
+                                      <b>Operating System:</b> Ubuntu, Linux, Windows<br>
+                                  </p>
+                                  <p>
+                                      <b>Experience</b>
+                                  </p>
+                                  <p>
+                                      <b>Total Exp. - </b> 1+ Years<br>
+                                      <b>Current Employer - </b><a href="https://qainfotech.com/" title="Software Engineer">Software Enginer, QA InfoTech, Noida, India</a><br>
+                                  </p>
+                              </div>
+                              <!--//content-->
+                          </div>
+                          <!--//section-inner-->
+                      </section>
+    </div>
 
-    <style>
-    #main_profile {
-      border-radius: 50%;
-    }
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-
-      }
-      footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #fff;
-  color:#000;
-}
-.bg-cover {
-
-    background-attachment: static;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.jumbotron {
-  background-color: unset;
-}
-.project_section{
-  background-color: unset;
-}
-    body,html {
-      background-image:linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url("{%static 'portfolio-background.jpg'%}");
-      background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
-    .card-img-top,.card{
-      background-color: unset;
-      border-width: 0px;
-      border-radius: 50%;
-    }
-    .h-divider{
- margin-top:5px;
- margin-bottom:5px;
- height:1px;
- width:100%;
- border-top:2px solid gray;
-}
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="fixed-top">
-      <!-- border border-white -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="{%url 'home' %}">Harshit Srivastava</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                  <a class="nav-item nav-link"  >HOME</a>
-                  <a class="nav-item nav-link" href="https://linkedin.com/in/harshit-srivastava-0311">LINKEDIN</a>
-                  <a class="nav-item nav-link"  href="{%static 'Harshit_resume.pdf'%}">RESUME</a>
-                  <a class="nav-item nav-link"  href="">EDUCATION</a>
-                  <a class="nav-item nav-link"  href="">SKILLSET</a>
-                  <a class="nav-item nav-link"  href="">CONTACT</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-<div class="jumbotron bg-cover text-white">
-  <main role="main" class="container-fluid jumbotron" id="main-section">
-
-        <div class="row">
-              <div class="col-sm-6 col-md-6 col-xs-6  text-right">
-                <p>  <img id="main_profile" src="{%static 'main-profile.jpg'%}" style="height:200px; margin: auto;" /></p>
-              </div>
-              <div class="col-sm-6 col-md-6 col-xs-6  text-left">
-                <p>
-                      <h1 class="jumbotron-heading">Hi, I'm Harshit Srivastava</h1>
-                      <p class="lead">Hey, my name is Harshit Srivastava</p>
-                      <p>
-                        <a href="mailto:harsh0311@gmail.com" class="btn btn-primary my-2">Email Me</a>
-                      </p>
-                </p>
-              </div>
-        </div>
-        <br>
-        <br>
-        <hr class="h-divider">
-        <br>
-        <h1 class="jumbotron-heading text-center">PROJECTS</h1>
-        <div class="album py-5 ">
-          <div class="container" >
-
-            {% for project in projects.all %}
-                <div class="row border  p-5 border-white">
-                      <div class="card col-md-4 shadow-sm" >
-                          <img class="card-img-top"  src="{{project.project_image.url}}"  length="20px"></img>
-                      </div>
-
-                      <div class="col-sm-8 col-md-8 col-xs-8 ">
-                        <div class="text-left">
-                          <p class="lead text-light">{{project.project_title}}</p>
-                          <br>
-                        </div>
-                        <p class="text-light">{{project.proejct_summary}}</p>
-                      </div>
-                </div>
-                <br>
-            {% endfor %}
-          </div>
-        </div>
-        <br>
-
-
-
-
-</div>
-
-    <!-- <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-          {% for project in projects.all %}
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="{{job.image.url}}" length="20px"></img>
-              <div class="card-body">
-                <p class="card-text">{{job.summary}}</p>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div> -->
-
-  </main>
-</body>
-  <footer class="fixed-bottom text-muted">
-
-    <div class="container">
-
-      <p align="center"> &copy Harshit Srivastava  {% now "Y" %} </p>
-        </div>
-  </footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</html>
+  {% endblock %}
