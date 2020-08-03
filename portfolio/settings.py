@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'omc&eoo=q#*jmy4g-wdx8t0sr3sjd&r5^dscdf%k48r72j)#*@'
+# SECRET_KEY = 'omc&eoo=q#*jmy4g-wdx8t0sr3sjd&r5^dscdf%k48r72j)#*@'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.environ.get('DEBUG_VALUE') == True')
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['harshitksrivastava.herokuapp.com']
 
@@ -79,12 +79,17 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfoliodb',
-        'USER': 'postgres',
-        'PASSWORD': 'harsh1268',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'USER': 'postgres',          # Not used with sqlite3.
+        'PASSWORD': '',              # Not used with sqlite3.
+        'HOST': '',                  # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                  # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+
+
+
+
 
 
 # Password validation
