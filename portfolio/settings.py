@@ -21,11 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'omc&eoo=q#*jmy4g-wdx8t0sr3sjd&r5^dscdf%k48r72j)#*@'
-
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['harshitksrivastava.herokuapp.com']
 
 
 # Application definition
@@ -126,7 +126,7 @@ STATICFILES_DIRS=[
 os.path.join(BASE_DIR, 'portfolio/static/')
 ]
 
-STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT= os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
